@@ -260,14 +260,14 @@ export default function Home() {
 
           <div className="mt-10 rounded-[2rem] bg-slate-50 p-6 ring-1 ring-slate-200 md:p-8">
             <div className="flex flex-col gap-8 md:flex-row md:items-center">
-              <div className="mx-auto w-full max-w-[300px] shrink-0 md:mx-0">
+              <div className="mx-auto w-full max-w-[320px] shrink-0 md:mx-0">
                 <div className="overflow-hidden rounded-[1.75rem] border border-slate-200 bg-white p-3 shadow-sm">
                   <Image
                     src="/hero-main.png"
                     alt="石塚亘"
                     width={1624}
                     height={1536}
-                    className="h-[350px] w-full rounded-[1.25rem] object-cover object-center"
+                    className="h-[300px] w-full rounded-[1.25rem] object-cover object-center"
                   />
                 </div>
               </div>
