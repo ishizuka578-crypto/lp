@@ -265,6 +265,73 @@ export default function Home() {
         </div>
       </section>
 
+<section className="mx-auto max-w-7xl px-6 py-8 lg:px-10 lg:py-20">
+  <div className="grid gap-8 lg:grid-cols-[1fr_0.9fr]">
+    <div className="rounded-[2rem] bg-white p-8 shadow-sm ring-1 ring-slate-200">
+      <p className="text-sm font-semibold uppercase tracking-[0.2em] text-sky-600">
+        Profile
+      </p>
+      <h2 className="mt-3 text-3xl font-bold md:text-4xl">自己紹介</h2>
+
+      <p className="mt-6 text-lg leading-8 text-slate-600">
+        接客・販売、法人営業を経て、現在はエンジニア採用に携わっています。
+        新卒・中途の両方で、母集団形成から面接、内定、入社まで一気通貫で経験してきました。
+      </p>
+
+      <p className="mt-6 text-lg leading-8 text-slate-600">
+        機械・電気・ITなど、幅広い領域のエンジニア採用に関わってきたことが強みです。
+        営業と採用の両方を経験しているため、現場要件と事業側の意図を整理しながら支援できます。
+      </p>
+
+      <p className="mt-6 text-lg leading-8 text-slate-600">
+        Webまわりについては、実績のあるパートナーと連携しながら対応しています。
+        私は窓口として、課題整理・要件整理・進行面を含めてご支援します。
+      </p>
+    </div>
+
+    <div className="rounded-[2rem] bg-slate-950 p-8 text-white shadow-xl shadow-slate-900/10">
+      <p className="text-sm font-semibold uppercase tracking-[0.2em] text-sky-300">
+        Links
+      </p>
+      <h2 className="mt-3 text-3xl font-bold md:text-4xl">
+        外部プロフィール
+      </h2>
+      <p className="mt-5 leading-8 text-slate-300">
+        詳しい経歴やプロフィールは、各サービスでもご確認いただけます。
+      </p>
+
+      <div className="mt-8 grid gap-4">
+        <a
+          href="https://youtrust.jp/users/f1436a3aee8c24ddd8cd66efa3720e71"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="rounded-2xl border border-white/10 bg-white/5 px-5 py-4 text-base font-medium text-white transition hover:bg-white/10"
+        >
+          YOUTRUSTを見る
+        </a>
+
+        <a
+          href="https://www.wantedly.com/id/wataru_ishiduka_a"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="rounded-2xl border border-white/10 bg-white/5 px-5 py-4 text-base font-medium text-white transition hover:bg-white/10"
+        >
+          Wantedlyを見る
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/%E4%BA%98-%E7%9F%B3%E5%A1%9A-8b2094259/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="rounded-2xl border border-white/10 bg-white/5 px-5 py-4 text-base font-medium text-white transition hover:bg-white/10"
+        >
+          LinkedInを見る
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
       <section id="contact" className="px-6 py-24 lg:px-10">
         <div className="mx-auto max-w-5xl overflow-hidden rounded-[2rem] bg-slate-950 text-white shadow-2xl shadow-slate-900/10">
           <div className="grid gap-0 lg:grid-cols-[0.9fr_1.1fr]">
