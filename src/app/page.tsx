@@ -282,7 +282,7 @@ export default function Home() {
                   src="/hero-main.png"
                   alt="石塚亘"
                   width={1624}
-                  height={1000}
+                  height={100}
                   className="h-[220px] w-full rounded-[1rem] object-cover object-center bg-white"
                 />
               </div>
