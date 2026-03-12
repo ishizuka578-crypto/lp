@@ -90,21 +90,20 @@ export default function Home() {
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(56,189,248,0.18),_transparent_35%),radial-gradient(circle_at_bottom_right,_rgba(79,70,229,0.18),_transparent_30%)]" />
 
-        <div className="relative mx-auto grid min-h-screen max-w-7xl items-center gap-14 px-6 py-20 lg:grid-cols-[1.08fr_0.92fr] lg:px-10">
-          <div>
+        <div className="relative mx-auto flex min-h-screen max-w-7xl items-center px-6 py-20 lg:px-10">
+          <div className="max-w-5xl">
             <div className="mb-6 inline-flex items-center rounded-full border border-sky-200 bg-white/80 px-4 py-2 text-sm font-medium text-sky-700 shadow-sm backdrop-blur">
               採用支援 × Web制作相談
             </div>
 
             <h1 className="max-w-5xl text-[clamp(1.8rem,3vw,3rem)] font-bold leading-[1.08] tracking-tight text-slate-950">
               採用業務も、Web制作も。<br />
-              {" "}
               <span className="bg-gradient-to-r from-sky-500 to-indigo-600 bg-clip-text text-transparent">
                 実務支援パートナー
               </span>
             </h1>
 
-            <p className="mt-6 max-w-2xl text-[clamp(1rem,1.7vw,1.2rem)] leading-8 text-slate-600">
+            <p className="mt-6 max-w-3xl text-[clamp(1rem,1.7vw,1.2rem)] leading-8 text-slate-600">
               製造業向けエンジニア採用の現場経験をもとに、採用業務の支援から
               Webまわりの相談まで、状況を整理しながら実務目線で伴走します。
             </p>
@@ -145,22 +144,6 @@ export default function Home() {
                   現状整理から対応
                 </p>
               </div>
-            </div>
-          </div>
-
-          <div className="relative mx-auto w-full max-w-[600px]">
-            <div className="absolute -left-6 top-10 h-24 w-24 rounded-full bg-sky-300/40 blur-2xl" />
-            <div className="absolute -right-6 bottom-8 h-24 w-24 rounded-full bg-indigo-400/30 blur-2xl" />
-
-            <div className="relative overflow-hidden rounded-[2rem] border border-white/70 bg-white p-4 shadow-2xl shadow-slate-900/10">
-              <Image
-                src="/hero-main.png"
-                alt="採用支援とWeb制作相談の窓口"
-                width={1024}
-                height={1536}
-                priority
-                className="h-auto w-full rounded-[1.5rem] object-contain bg-white"
-              />
             </div>
           </div>
         </div>
@@ -265,72 +248,87 @@ export default function Home() {
         </div>
       </section>
 
-<section className="mx-auto max-w-7xl px-6 py-8 lg:px-10 lg:py-20">
-  <div className="grid gap-8 lg:grid-cols-[1fr_0.9fr]">
-    <div className="rounded-[2rem] bg-white p-8 shadow-sm ring-1 ring-slate-200">
-      <p className="text-sm font-semibold uppercase tracking-[0.2em] text-sky-600">
-        Profile
-      </p>
-      <h2 className="mt-3 text-3xl font-bold md:text-4xl">自己紹介</h2>
+      <section className="mx-auto max-w-7xl px-6 py-8 lg:px-10 lg:py-20">
+        <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
+          <div className="rounded-[2rem] bg-white p-8 shadow-sm ring-1 ring-slate-200">
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-sky-600">
+              Profile
+            </p>
+            <h2 className="mt-3 text-3xl font-bold md:text-4xl">自己紹介</h2>
 
-      <p className="mt-6 text-lg leading-8 text-slate-600">
-        接客・販売、法人営業を経て、現在はエンジニア採用に携わっています。
-        新卒・中途の両方で、母集団形成から面接、内定、入社まで一気通貫で経験してきました。
-      </p>
+            <p className="mt-6 text-lg leading-8 text-slate-600">
+              接客・販売、法人営業を経て、現在はエンジニア採用に携わっています。
+              新卒・中途の両方で、母集団形成から面接、内定、入社まで一気通貫で経験してきました。
+            </p>
 
-      <p className="mt-6 text-lg leading-8 text-slate-600">
-        機械・電気・ITなど、幅広い領域のエンジニア採用に関わってきたことが強みです。
-        営業と採用の両方を経験しているため、現場要件と事業側の意図を整理しながら支援できます。
-      </p>
+            <p className="mt-6 text-lg leading-8 text-slate-600">
+              機械・電気・ITなど、幅広い領域のエンジニア採用に関わってきたことが強みです。
+              営業と採用の両方を経験しているため、現場要件と事業側の意図を整理しながら支援できます。
+            </p>
 
-      <p className="mt-6 text-lg leading-8 text-slate-600">
-        Webまわりについては、実績のあるパートナーと連携しながら対応しています。
-        私は窓口として、課題整理・要件整理・進行面を含めてご支援します。
-      </p>
-    </div>
+            <p className="mt-6 text-lg leading-8 text-slate-600">
+              Webまわりについては、実績のあるパートナーと連携しながら対応しています。
+              私は窓口として、課題整理・要件整理・進行面を含めてご支援します。
+            </p>
+          </div>
 
-    <div className="rounded-[2rem] bg-slate-950 p-8 text-white shadow-xl shadow-slate-900/10">
-      <p className="text-sm font-semibold uppercase tracking-[0.2em] text-sky-300">
-        Links
-      </p>
-      <h2 className="mt-3 text-3xl font-bold md:text-4xl">
-        外部プロフィール
-      </h2>
-      <p className="mt-5 leading-8 text-slate-300">
-        詳しい経歴やプロフィールは、各サービスでもご確認いただけます。
-      </p>
+          <div className="rounded-[2rem] bg-slate-950 p-8 text-white shadow-xl shadow-slate-900/10">
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-sky-300">
+              Links
+            </p>
 
-      <div className="mt-8 grid gap-4">
-        <a
-          href="https://youtrust.jp/users/f1436a3aee8c24ddd8cd66efa3720e71"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="rounded-2xl border border-white/10 bg-white/5 px-5 py-4 text-base font-medium text-white transition hover:bg-white/10"
-        >
-          YOUTRUSTを見る
-        </a>
+            <div className="mt-4 flex flex-col items-center text-center">
+              <div className="w-full max-w-[240px] overflow-hidden rounded-[1.5rem] border border-white/10 bg-white/5 p-3">
+                <Image
+                  src="/hero-main.png"
+                  alt="石塚亘"
+                  width={1024}
+                  height={1536}
+                  className="h-auto w-full rounded-[1rem] object-contain bg-white"
+                />
+              </div>
 
-        <a
-          href="https://www.wantedly.com/id/wataru_ishiduka_a"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="rounded-2xl border border-white/10 bg-white/5 px-5 py-4 text-base font-medium text-white transition hover:bg-white/10"
-        >
-          Wantedlyを見る
-        </a>
+              <h2 className="mt-5 text-2xl font-bold md:text-3xl">石塚 亘</h2>
+              <p className="mt-2 text-sm leading-7 text-slate-300">
+                採用支援 / Web制作相談窓口
+              </p>
+            </div>
 
-        <a
-          href="https://www.linkedin.com/in/%E4%BA%98-%E7%9F%B3%E5%A1%9A-8b2094259/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="rounded-2xl border border-white/10 bg-white/5 px-5 py-4 text-base font-medium text-white transition hover:bg-white/10"
-        >
-          LinkedInを見る
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
+            <p className="mt-8 leading-8 text-slate-300">
+              詳しい経歴やプロフィールは、各サービスでもご確認いただけます。
+            </p>
+
+            <div className="mt-8 grid gap-4">
+              <a
+                href="https://youtrust.jp/users/f1436a3aee8c24ddd8cd66efa3720e71"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-2xl border border-white/10 bg-white/5 px-5 py-4 text-base font-medium text-white transition hover:bg-white/10"
+              >
+                YOUTRUSTを見る
+              </a>
+
+              <a
+                href="https://www.wantedly.com/id/wataru_ishiduka_a"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-2xl border border-white/10 bg-white/5 px-5 py-4 text-base font-medium text-white transition hover:bg-white/10"
+              >
+                Wantedlyを見る
+              </a>
+
+              <a
+                href="https://www.linkedin.com/in/%E4%BA%98-%E7%9F%B3%E5%A1%9A-8b2094259/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-2xl border border-white/10 bg-white/5 px-5 py-4 text-base font-medium text-white transition hover:bg-white/10"
+              >
+                LinkedInを見る
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <section id="contact" className="px-6 py-24 lg:px-10">
         <div className="mx-auto max-w-5xl overflow-hidden rounded-[2rem] bg-slate-950 text-white shadow-2xl shadow-slate-900/10">
