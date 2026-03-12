@@ -97,7 +97,8 @@ export default function Home() {
             </div>
 
             <h1 className="max-w-5xl text-[clamp(1.8rem,3vw,3rem)] font-bold leading-[1.08] tracking-tight text-slate-950">
-              採用業務も、Web制作も。<br />
+              採用業務も、Web制作も。
+              <br />
               <span className="bg-gradient-to-r from-sky-500 to-indigo-600 bg-clip-text text-transparent">
                 実務支援パートナー
               </span>
@@ -273,60 +274,61 @@ export default function Home() {
           </div>
 
           <div className="rounded-[2rem] bg-slate-950 p-8 text-white shadow-xl shadow-slate-900/10">
-  <p className="text-sm font-semibold uppercase tracking-[0.2em] text-sky-300">
-    Links
-  </p>
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-sky-300">
+              Links
+            </p>
 
-  <div className="mt-4 flex flex-col items-center text-center">
-    <div className="w-full max-w-[300px] overflow-hidden rounded-[1.5rem] border border-white/10 bg-white/5 p-3">
-      <Image
-        src="/hero-main.png"
-        alt="石塚亘"
-        width={1024}
-        height={1536}
-        className="h-[220px] w-full rounded-[1rem] object-cover object-center bg-white"
-      />
-    </div>
+            <div className="mt-4 flex flex-col items-center text-center">
+              <div className="w-full max-w-[300px] overflow-hidden rounded-[1.5rem] border border-white/10 bg-white/5 p-3">
+                <Image
+                  src="/hero-main.png"
+                  alt="石塚亘"
+                  width={1024}
+                  height={1536}
+                  className="h-[220px] w-full rounded-[1rem] object-cover object-center bg-white"
+                />
+              </div>
 
-    <h2 className="mt-5 text-2xl font-bold md:text-3xl">石塚 亘</h2>
-    <p className="mt-2 text-sm leading-7 text-slate-300">
-      採用支援 / Web制作相談窓口
-    </p>
-  </div>
+              <h2 className="mt-5 text-2xl font-bold md:text-3xl">石塚 亘</h2>
+              <p className="mt-2 text-sm leading-7 text-slate-300">
+                採用支援 / Web制作相談窓口
+              </p>
+            </div>
 
-  <p className="mt-8 leading-8 text-slate-300">
-    詳しい経歴やプロフィールは、各サービスでもご確認いただけます。
-  </p>
+            <p className="mt-8 leading-8 text-slate-300">
+              詳しい経歴やプロフィールは、各サービスでもご確認いただけます。
+            </p>
 
-  <div className="mt-8 grid gap-4">
-    <a
-      href="https://youtrust.jp/users/f1436a3aee8c24ddd8cd66efa3720e71"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="rounded-2xl border border-white/10 bg-white/5 px-5 py-4 text-base font-medium text-white transition hover:bg-white/10"
-    >
-      YOUTRUST
-    </a>
+            <div className="mt-8 grid gap-4">
+              <a
+                href="https://youtrust.jp/users/f1436a3aee8c24ddd8cd66efa3720e71"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-2xl border border-white/10 bg-white/5 px-5 py-4 text-base font-medium text-white transition hover:bg-white/10"
+              >
+                YOUTRUST
+              </a>
 
-    <a
-      href="https://www.wantedly.com/id/wataru_ishiduka_a"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="rounded-2xl border border-white/10 bg-white/5 px-5 py-4 text-base font-medium text-white transition hover:bg-white/10"
-    >
-      Wantedly
-    </a>
+              <a
+                href="https://www.wantedly.com/id/wataru_ishiduka_a"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-2xl border border-white/10 bg-white/5 px-5 py-4 text-base font-medium text-white transition hover:bg-white/10"
+              >
+                Wantedly
+              </a>
 
-    <a
-      href="https://www.linkedin.com/in/%E4%BA%98-%E7%9F%B3%E5%A1%9A-8b2094259/"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="rounded-2xl border border-white/10 bg-white/5 px-5 py-4 text-base font-medium text-white transition hover:bg-white/10"
-    >
-      LinkedIn
-    </a>
-  </div>
-</div>
+              <a
+                href="https://www.linkedin.com/in/%E4%BA%98-%E7%9F%B3%E5%A1%9A-8b2094259/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-2xl border border-white/10 bg-white/5 px-5 py-4 text-base font-medium text-white transition hover:bg-white/10"
+              >
+                LinkedIn
+              </a>
+            </div>
+          </div>
+        </div>
       </section>
 
       <section id="contact" className="px-6 py-24 lg:px-10">
