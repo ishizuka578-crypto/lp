@@ -258,39 +258,50 @@ export default function Home() {
           </p>
           <h2 className="mt-3 text-3xl font-bold md:text-4xl">自己紹介</h2>
 
-          <div className="mt-8 flex flex-col gap-8">
-            <div>
-              <p className="text-lg leading-8 text-slate-600">
-                接客・販売、法人営業を経て、現在はエンジニア採用に携わっています。
-                新卒・中途の両方で、母集団形成から面接、内定、入社まで一気通貫で経験してきました。
-              </p>
-
-              <p className="mt-6 text-lg leading-8 text-slate-600">
-                機械・電気・ITなど、幅広い領域のエンジニア採用に関わってきたことが強みです。
-                営業と採用の両方を経験しているため、現場要件と事業側の意図を整理しながら支援できます。
-              </p>
-
-              <p className="mt-6 text-lg leading-8 text-slate-600">
-                Webまわりについては、実績のあるパートナーと連携しながら対応しています。
-                私は窓口として、課題整理・要件整理・進行面を含めてご支援します。
-              </p>
-            </div>
-
-            <div className="flex flex-col items-center text-center">
-              <div className="w-full max-w-[300px] overflow-hidden rounded-[1.5rem] border border-slate-200 bg-slate-50 p-3">
-                <Image
-                  src="/hero-main.png"
-                  alt="石塚亘"
-                  width={1624}
-                  height={1536}
-                  className="h-[220px] w-full rounded-[1rem] object-cover object-center bg-white"
-                />
+          <div className="mt-10 rounded-[2rem] bg-slate-50 p-6 ring-1 ring-slate-200 md:p-8">
+            <div className="flex flex-col gap-8 md:flex-row md:items-center">
+              <div className="mx-auto w-full max-w-[260px] shrink-0 md:mx-0">
+                <div className="overflow-hidden rounded-[1.75rem] border border-slate-200 bg-white p-3 shadow-sm">
+                  <Image
+                    src="/hero-main.png"
+                    alt="石塚亘"
+                    width={1624}
+                    height={1536}
+                    className="h-[240px] w-full rounded-[1.25rem] object-cover object-center"
+                  />
+                </div>
               </div>
 
-              <h3 className="mt-5 text-2xl font-bold text-slate-950">石塚 亘</h3>
-              <p className="mt-2 text-sm leading-7 text-slate-600">
-                採用支援 / Web制作相談窓口
-              </p>
+              <div className="flex-1 text-center md:text-left">
+                <p className="text-sm font-semibold uppercase tracking-[0.18em] text-sky-600">
+                  Recruit / Web Support
+                </p>
+
+                <h3 className="mt-3 text-3xl font-bold text-slate-950 md:text-4xl">
+                  石塚 亘
+                </h3>
+
+                <p className="mt-3 text-sm font-medium text-slate-500 md:text-base">
+                  採用支援 / Web制作相談窓口
+                </p>
+
+                <div className="mt-6 space-y-5 text-lg leading-8 text-slate-600">
+                  <p>
+                    接客・販売、法人営業を経て、現在はエンジニア採用に携わっています。
+                    新卒・中途の両方で、母集団形成から面接、内定、入社まで一気通貫で経験してきました。
+                  </p>
+
+                  <p>
+                    機械・電気・ITなど、幅広い領域のエンジニア採用に関わってきたことが強みです。
+                    営業と採用の両方を経験しているため、現場要件と事業側の意図を整理しながら支援できます。
+                  </p>
+
+                  <p>
+                    Webまわりについては、実績のあるパートナーと連携しながら対応しています。
+                    私は窓口として、課題整理・要件整理・進行面を含めてご支援します。
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
 
