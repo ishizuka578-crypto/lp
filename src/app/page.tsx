@@ -72,14 +72,16 @@ export default function Home() {
         throw new Error("送信に失敗しました");
       }
 
-      setResult("送信しました。ありがとうございます。");
+      setResult("送信ありがとうございました。内容を確認のうえ、ご連絡いたします。");
       setForm({
         name: "",
         email: "",
         message: "",
       });
     } catch {
-      setResult("送信に失敗しました。もう一度お試しください。");
+      setResult(
+        "送信に失敗しました。お手数ですが、時間をおいて再度お試しください。"
+      );
     } finally {
       setLoading(false);
     }
@@ -127,21 +129,21 @@ export default function Home() {
             <div className="mt-10 grid gap-4 sm:grid-cols-3">
               <div className="rounded-2xl border border-white/70 bg-white/90 px-6 py-5 shadow-sm backdrop-blur">
                 <p className="text-sm font-medium text-slate-500">支援領域</p>
-                <p className="mt-3 text-[clamp(1rem,1.05vw,1.15rem)] font-semibold leading-[1.35] text-slate-900 whitespace-nowrap">
+                <p className="mt-3 text-[clamp(1rem,1.05vw,1.15rem)] font-semibold leading-[1.35] text-slate-900">
                   採用実務 / Web相談
                 </p>
               </div>
 
               <div className="rounded-2xl border border-white/70 bg-white/90 px-6 py-5 shadow-sm backdrop-blur">
                 <p className="text-sm font-medium text-slate-500">強み</p>
-                <p className="mt-3 text-[clamp(1rem,1.05vw,1.15rem)] font-semibold leading-[1.35] text-slate-900 whitespace-nowrap">
+                <p className="mt-3 text-[clamp(1rem,1.05vw,1.15rem)] font-semibold leading-[1.35] text-slate-900">
                   採用と営業の現場理解
                 </p>
               </div>
 
               <div className="rounded-2xl border border-white/70 bg-white/90 px-6 py-5 shadow-sm backdrop-blur">
                 <p className="text-sm font-medium text-slate-500">相談開始</p>
-                <p className="mt-3 text-[clamp(1rem,1.05vw,1.15rem)] font-semibold leading-[1.35] text-slate-900 whitespace-nowrap">
+                <p className="mt-3 text-[clamp(1rem,1.05vw,1.15rem)] font-semibold leading-[1.35] text-slate-900">
                   現状整理から対応
                 </p>
               </div>
@@ -250,61 +252,62 @@ export default function Home() {
       </section>
 
       <section className="mx-auto max-w-7xl px-6 py-8 lg:px-10 lg:py-20">
-        <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
-          <div className="rounded-[2rem] bg-white p-8 shadow-sm ring-1 ring-slate-200">
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-sky-600">
-              Profile
-            </p>
-            <h2 className="mt-3 text-3xl font-bold md:text-4xl">自己紹介</h2>
+        <div className="rounded-[2rem] bg-white p-8 shadow-sm ring-1 ring-slate-200 md:p-10">
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-sky-600">
+            Profile
+          </p>
+          <h2 className="mt-3 text-3xl font-bold md:text-4xl">自己紹介</h2>
 
-            <p className="mt-6 text-lg leading-8 text-slate-600">
-              接客・販売、法人営業を経て、現在はエンジニア採用に携わっています。
-              新卒・中途の両方で、母集団形成から面接、内定、入社まで一気通貫で経験してきました。
-            </p>
+          <div className="mt-8 flex flex-col gap-8">
+            <div>
+              <p className="text-lg leading-8 text-slate-600">
+                接客・販売、法人営業を経て、現在はエンジニア採用に携わっています。
+                新卒・中途の両方で、母集団形成から面接、内定、入社まで一気通貫で経験してきました。
+              </p>
 
-            <p className="mt-6 text-lg leading-8 text-slate-600">
-              機械・電気・ITなど、幅広い領域のエンジニア採用に関わってきたことが強みです。
-              営業と採用の両方を経験しているため、現場要件と事業側の意図を整理しながら支援できます。
-            </p>
+              <p className="mt-6 text-lg leading-8 text-slate-600">
+                機械・電気・ITなど、幅広い領域のエンジニア採用に関わってきたことが強みです。
+                営業と採用の両方を経験しているため、現場要件と事業側の意図を整理しながら支援できます。
+              </p>
 
-            <p className="mt-6 text-lg leading-8 text-slate-600">
-              Webまわりについては、実績のあるパートナーと連携しながら対応しています。
-              私は窓口として、課題整理・要件整理・進行面を含めてご支援します。
-            </p>
-          </div>
+              <p className="mt-6 text-lg leading-8 text-slate-600">
+                Webまわりについては、実績のあるパートナーと連携しながら対応しています。
+                私は窓口として、課題整理・要件整理・進行面を含めてご支援します。
+              </p>
+            </div>
 
-          <div className="rounded-[2rem] bg-slate-950 p-8 text-white shadow-xl shadow-slate-900/10">
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-sky-300">
-              Links
-            </p>
-
-            <div className="mt-4 flex flex-col items-center text-center">
-              <div className="w-full max-w-[300px] overflow-hidden rounded-[1.5rem] border border-white/10 bg-white/5 p-3">
+            <div className="flex flex-col items-center text-center">
+              <div className="w-full max-w-[300px] overflow-hidden rounded-[1.5rem] border border-slate-200 bg-slate-50 p-3">
                 <Image
                   src="/hero-main.png"
                   alt="石塚亘"
-                  width={1024}
+                  width={1624}
                   height={1536}
                   className="h-[220px] w-full rounded-[1rem] object-cover object-center bg-white"
                 />
               </div>
 
-              <h2 className="mt-5 text-2xl font-bold md:text-3xl">石塚 亘</h2>
-              <p className="mt-2 text-sm leading-7 text-slate-300">
+              <h3 className="mt-5 text-2xl font-bold text-slate-950">石塚 亘</h3>
+              <p className="mt-2 text-sm leading-7 text-slate-600">
                 採用支援 / Web制作相談窓口
               </p>
             </div>
+          </div>
 
-            <p className="mt-8 leading-8 text-slate-300">
+          <div className="mt-12 border-t border-slate-200 pt-10">
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-sky-600">
+              Links
+            </p>
+            <p className="mt-4 text-lg leading-8 text-slate-600">
               詳しい経歴やプロフィールは、各サービスでもご確認いただけます。
             </p>
 
-            <div className="mt-8 grid gap-4">
+            <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
               <a
                 href="https://youtrust.jp/users/f1436a3aee8c24ddd8cd66efa3720e71"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-2xl border border-white/10 bg-white/5 px-5 py-4 text-base font-medium text-white transition hover:bg-white/10"
+                className="flex items-center justify-center rounded-2xl border border-slate-200 bg-slate-50 px-5 py-4 text-base font-medium text-slate-900 transition hover:border-slate-300 hover:bg-slate-100"
               >
                 YOUTRUST
               </a>
@@ -313,7 +316,7 @@ export default function Home() {
                 href="https://www.wantedly.com/id/wataru_ishiduka_a"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-2xl border border-white/10 bg-white/5 px-5 py-4 text-base font-medium text-white transition hover:bg-white/10"
+                className="flex items-center justify-center rounded-2xl border border-slate-200 bg-slate-50 px-5 py-4 text-base font-medium text-slate-900 transition hover:border-slate-300 hover:bg-slate-100"
               >
                 Wantedly
               </a>
@@ -322,7 +325,7 @@ export default function Home() {
                 href="https://www.linkedin.com/in/%E4%BA%98-%E7%9F%B3%E5%A1%9A-8b2094259/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-2xl border border-white/10 bg-white/5 px-5 py-4 text-base font-medium text-white transition hover:bg-white/10"
+                className="flex items-center justify-center rounded-2xl border border-slate-200 bg-slate-50 px-5 py-4 text-base font-medium text-slate-900 transition hover:border-slate-300 hover:bg-slate-100"
               >
                 LinkedIn
               </a>
